@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "569788963001",
+    "firebase_url": "https://hotelfinder-8201e.firebaseio.com",
+    "project_id": "hotelfinder-8201e",
+    "storage_bucket": "hotelfinder-8201e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569788963001:android:b928c52711d8604e",
+        "android_client_info": {
+          "package_name": "com.example.lwembawo.hotelfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569788963001-gkjid59ehdp44prgqdq3n6bd10req2p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF39FMY6i6QVmWva2QamrldXGXnyr3Ig4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

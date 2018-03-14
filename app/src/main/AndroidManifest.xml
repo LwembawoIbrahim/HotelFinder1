@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lwembawo.hotelfinder">
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FavouriteHotelActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddHotelActivity"
+            android:label="@string/add_hotel"
+            android:parentActivityName=".FavouriteHotelActivity" />
+        <activity
+            android:name=".PersonToAddHotelActivity"
+            android:label="@string/Persons_hotel"
+            android:parentActivityName=".FavouriteHotelActivity" />
+        <activity
+            android:name=".HotelDetailsActivity"
+            android:label="@string/services"
+            android:parentActivityName=".FavouriteHotelActivity" />
+        <activity
+            android:name=".HotelDetailsActivityWithFragments"
+            android:label="@string/title_activity_hotel_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DescriptionActivity" />
+        <activity
+            android:name=".AddRoomActivity"
+            android:label="@string/add_rooms"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RoomsActivity"
+            android:label="@string/add_rooms" />
+        <activity
+            android:name=".BookingActivity"
+            android:label="@string/booking" />
+    </application>
+    <supports-screens android:xlargeScreens="true" />
+
+</manifest>

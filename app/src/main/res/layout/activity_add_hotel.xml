@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lwembawo.hotelfinder.AddHotelActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="383dp"
+        android:layout_height="216dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images_add_hotel" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="#2F4F4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edHotelName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:hint="@string/hotel_name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edDistrictName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/district_name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edRegionName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/region_name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edHotelAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hotel_address"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edHotelContacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hotel_contacts"
+                android:inputType="phone"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Simple_description"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edHotelDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/uploadHotelPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_hotel_photo"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_save_hotel_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/save_button"
+                    android:onClick="onSavingHotelData"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cancel_button"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

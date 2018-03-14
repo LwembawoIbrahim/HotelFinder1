@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lwembawo.hotelfinder.PersonToAddHotelActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/edFirstNamePersonsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textPersonName"
+                android:hint="@string/firstName_persons_details"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/edLastNamePersonDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/last_name_persons_details"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_persons_details"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <RadioGroup
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/radioGroupGender">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale_persons_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male_person_details"
+                   />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPersonsFemaleDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/female_persons_details"
+                    />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edPersonsDetailsNationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/nationality_persons_details"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+            <EditText
+                android:id="@+id/edAddRoomEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPersonName"
+                android:hint="@string/email_persons_details"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/edPersonsDetailsDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPersonName"
+                android:hint="@string/designation_persons_details"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/edPersonsDetailsContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="phone"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/contacts_persons_details"/>
+
+            <EditText
+                android:id="@+id/edPersonsDetailsLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="9dp"
+                android:inputType="textPersonName"
+                android:hint="@string/location_person_details"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/edPersonsDetailsPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/password"/>
+
+            <EditText
+                android:id="@+id/edPersonsDetailsConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/confirm_password"/>
+            <Button
+                android:id="@+id/uploadHotelPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_hotel_photo"/>
+            <Button
+                android:id="@+id/button_submit_persons_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_button"
+                android:background="#8B008B"
+                android:onClick="onSubmittingPersonsDetails"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

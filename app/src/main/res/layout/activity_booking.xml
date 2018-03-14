@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lwembawo.hotelfinder.BookingActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="371dp"
+                android:layout_height="191dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/images_twin_bed" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDisplayRoomYpe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/holo_green_dark"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ugx:"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_green_dark"/>
+                <TextView
+                    android:id="@+id/tvDisplayRoomCosts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text=" TextView"
+                    android:textColor="@android:color/holo_green_dark" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/number_of_nights" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonNightsPlus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:onClick="increment"
+                    android:text="+"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/numberToBeIncremented"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/buttonNightsMinus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="9dp"
+                    android:onClick="decrement"
+                    android:text="-"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Ugx: "
+
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/edClientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/client_name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="11dp"
+                android:text="@string/gender_persons_details"
+                android:textColor="@android:color/black" />
+
+            <RadioGroup
+                android:id="@+id/clientRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonClientMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male_person_details" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonClientFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/female_persons_details" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edClientsNationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_nationality"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edClientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edClientContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_contacts"
+                android:inputType="phone" />
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <EditText
+                    android:id="@+id/check_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:focusable="false"
+                    android:hint="@string/check_in"
+                    android:onClick="pickDate" />
+
+                <EditText
+                android:id="@+id/check_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/check_out"
+                android:layout_marginLeft="55dp"
+                android:onClick="pickDate"
+                android:focusable="false"/>
+            </LinearLayout>
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonClientReserve"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="reserve"
+                android:text="@string/reserve_button"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/cancel_booking"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel_button"
+                android:onClick="onCancellingBooking"/>
+           </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
